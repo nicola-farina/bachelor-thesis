@@ -1,0 +1,30 @@
+\chapter{Introduction}
+\label{cha:intro}
+This thesis has been developed at U-Hopper, during a 4-month period in which I was able to combine a work experience in a company with the writing of my bachelor's thesis. U-Hopper is a company that defines itself as a "Data Intelligence Lab", with an expertise on Big Data Analytics, Business Intelligence and Artificial Intelligence. Headquartered in Trento, it provides big data-enabled solutions and technologies, for which it received numerous awards throughout the years.
+
+The company has brought its presence into the user profiling world by developing Tapoi\footnote{\url{www.tapoi.cloud}}, a service that makes heavy use of artificial intelligence and machine learning algorithms to provide human-centered insights on existing customers. The existence of Tapoi is what inspired the work of this thesis, which proposes to further humanize customer data in order to make marketing decisions that result in a better custom experience. What follows is a brief introduction of the problem at hand.
+
+\section{Problem statement}
+Marketing is a crucial aspect for the success of any brand offering a service. Especially in today's globalized market, good advertising and communication strategies are the key to stand out amongst the competitors. Ultimately, marketing boils down to one thing: knowing your customers. With this knowledge, a company can understand the actual needs of their clients and design solutions that will satisfy them, ultimately increasing profit. In fact, customers, now more than ever before, want a personalized experience when interacting with a brand, which spans throughout the whole interaction (from product recommendations, to tailored emails).
+
+A popular way to achieve customer knowledge is through \textit{personas}. A persona is an imaginary person representing a real user segment, that is, a group of people that have similar characteristics. Their power is that they allow to abstract a high number of customers, even millions, into only a few, easy to read profiles. Marketing specialists and sales teams can then use the data contained in these personas to make informed decisions on their marketing campaigns and to design the aforementioned personalized experiences. 
+
+Traditionally, these personas are built manually by marketing specialists based on the outcome of interviews, focus groups and surveys. This approach is lengthy and expensive, as it often involves direct contact with customers and manual processing of a lot of data. The purpose of this thesis is to explore the possibility of automating this process.
+
+In particular, we propose the following research question: is it possible to automatically generate marketing personas for a brand or organization, based on public data available on the legal basis? Let us better define some terms:
+\begin{itemize}
+    \item \textbf{automatically}: the user is not required to make decisions nor possess knowledge on how to create personas in order to use the service;
+    \item \textbf{publicly available data}: data that can be collected publicly. Some examples are: social media, like Twitter or Facebook; other websites, for example blogs or sector-specific services like GitHub; third party data, such as national surveys or company data;
+    \item \textbf{legal base}: the service needs to be fully compliant with GPDR, the General Data Protection Regulation.
+\end{itemize}
+
+This thesis shows that fulfilling this task is indeed possible, and proposes a system design to carry it out, together with a working prototype for demonstration purposes.
+
+\section{Personas}
+\label{sec:personas}
+Personas were first introduced by Alan Cooper in 1999 \cite{cooper2004inmates} in the context of software development. They are "\textit{fictitious, specific and concrete representations of target users}" \cite{pruitt2010persona} to be used throughout the design process. With time, the persona technique has expanded to other fields, such as design, marketing, healthcare \cite{vosbergen2015using}, and even games \cite{tychsen2008defining}.
+
+Given the high number of use-cases for personas, the information they contain and the way data is collected cannot be uniquely specified and can vary significantly between each project. Regardless, some information is commonly found in most personas, as can be seen in many general-purpose persona templates found on the Internet. This includes: demographics, such as name, age, place of residence, marital status or living situation, profession, photo; and psychographics, like personality traits, hobbies, interests and opinions, values, lifestyle and habits, frustrations, needs and motivations.
+
+\section{Outline}
+This thesis is organized as follows: Chapter \ref{cha:art} presents the state of the art related to the persona creation process, which is needed to understand the current research problems and gaps. Chapter \ref{cha:design} describes the design solution, with particular focus on the logical components of the system and on data modeling. In Chapter \ref{cha:implementation}, the implementation choices are presented and justified, while in Chapter \ref{cha:evaluation} the implemented prototype is evaluated. Chapter \ref{cha:conclusions} concludes this thesis with some final remarks for future work.

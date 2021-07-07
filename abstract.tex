@@ -1,0 +1,12 @@
+\chapter*{Abstract} % senza numerazione
+\label{cha:abstract}
+\addcontentsline{toc}{chapter}{Abstract} % da aggiungere comunque all'indice
+Nowadays digital marketing heavily relies on the segmentation of an audience at both aggregated and at the single user's level. Personas are profiles of fictional users that "humanize data" by giving an identity to each audience segment; they are used by marketeers to better understand their customers and make marketing decisions for each customer segment in an efficient way. 
+
+Personas are traditionally created manually, by collecting data through interviews and surveys and analyzing it in a lengthy and expensive process. For this reason, in the latest years, the concept of automatic persona generation has increased in popularity. Nonetheless, very few services exist that offer such a solution, and those that do exist share limitations in either how or what data is collected to create the personas.
+
+The best and easiest place to look for data to build personas on is social media: they are one of the most used means of communication, and offer a great source of both demographics and behavioral data, which is precious in order to create meaningful personas. This work explores the possibility of using social media data as a source for creating marketing personas.
+
+This thesis was developed at U-Hopper\footnote{\url{www.u-hopper.com}}, a company that specializes in big data analytics and artificial intelligence, and that is already present in the world of customer knowledge.
+
+The proposed solution not only shows that automatic persona generation from social media data is feasible, but also that a system with high scalability, expandability and accuracy can be designed and implemented to fulfill that task. It uses several components, each with a specific task, from data collection, to data enrichment, all the way to clustering and persona generation. Many classifiers are employed to extract insights from the available data, which are then used to create customers segments. All the components are linked in a stream-processing architecture, which allows to avoid bottlenecks and achieve high separation of concerns. Finally, users are segmented with very good accuracy, precision and recall measures, all above 0.9.

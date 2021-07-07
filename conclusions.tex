@@ -1,0 +1,20 @@
+\chapter{Conclusions}
+\label{cha:conclusions}
+This thesis tries to answer the research question about the feasibility of automatic persona generation from social media data, proposing a solution that is scalable and expandable to multiple social media, and presenting a prototype that works with Twitter data.
+
+It develops on what is the current state of the art, especially because it is one of the only works that discusses in depth about all the phases of the process, and does not focus only on clustering. The enrichment component makes use of innovative techniques, such as using Wikipedia contents to understand what a user talks about, which allows to support a large number of languages and to use all components of an activity (text, images, but also external links etc.) for classification purposes. The proposed system architecture and data models are for general purpose personas, but they are designed to allow the creation of sector-specific personas by introducing new classifiers. Furthermore, the stream processing design allows to avoid bottlenecks as much as possible and achieves a high separation of concerns.
+
+The system shows great results, with clustering accuracy, precision and recall measures well above 0.9, as well as high accuracy enrichments.
+
+While many features were not implemented in the final prototype, either due to time constraints or privacy reasons, this work offers a solid base for automatically generating marketing personas from social media data, which can be deepened in some aspects based on the specific scope in which it will be used.
+
+\section{Future work}
+There are several aspects that can be deepened or added. First of all, the system was designed to work with several social networks and similar sites in mind, but due to the reasons explained in Section \ref{sec:data_collection_imp} only Twitter was taken into consideration for the prototype. The first logical addition would be to add support for other social networks: first of all, Facebook would be a good choice, since it is a great source of personal information and demographics that are hard to come by on Twitter.
+
+Another important improvement would be adding enrichment modules to predict all the attributes that were not considered in the prototype due to time constraints. Information such as location, marital status and personality would add great value to the final personas. The same applies for personas themselves: implementing a textual description for each of them would add a lot of value to their use.
+
+More time could be spent on the evaluation of the clusters and on fine-tuning parameters such as the distance metric weights. Testing the system on a dataset with a lot more than 90 users would provide more accurate results, and possibly confirm or rule out the possibility of overfitting.
+
+Making use of sector-specific classifiers would also greatly improve the quality of personas for non-general use cases.
+
+Finally, providing a web application with a graphical interface to use the service would be an important addition to provide a better user experience and simplify the interactions. It would also allow to visualize personas with nice graphics, which is how they are usually presented to marketing specialists.
